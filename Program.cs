@@ -262,7 +262,6 @@ do
                 break;
 
                 case "3": {
-
                     if (os.Contains("Windows")){
                         // Run aksAzureCniUdrFw.ps1     
                         using Process azaksAzureCniUdrFw = new();
@@ -303,13 +302,11 @@ do
                 break;
 
             }
-
             Thread.Sleep(2000);
         }
         break;
 
         case "5": {
-
             Console.Clear();
             string[] scenARC = new string[4];
             scenARC[0]=" 1. aksArc";
@@ -464,5 +461,4 @@ do
         }
         break;
     }
-
 } while (menuSelection != "exit");
