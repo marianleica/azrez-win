@@ -5,7 +5,7 @@ using System.Diagnostics;
 
 // Variables for the console title
 string? applicationName = "azrez";
-string? applicationVersion = "v1.01";
+string? applicationVersion = "v1.05";
 Console.Title=$"{applicationName} - {applicationVersion}";
 
 // Variables for the app menu
