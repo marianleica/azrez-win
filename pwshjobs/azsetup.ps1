@@ -44,7 +44,7 @@ Write-Output ""
 
 Start-Sleep -Seconds 1
 # Write-Output "These are the subscriptions associated with your account:"
-# Get-AzContext | fl *Name,Subscription,SubscriptionName,Account*
+    # Get-AzContext | fl *Name,Subscription,SubscriptionName,Account*
 # Write-Output ""
 # Start-Sleep -Seconds 1
 # $subscriptionid = Read-Host "Please choose your subscription from the list above and paste it here: "
