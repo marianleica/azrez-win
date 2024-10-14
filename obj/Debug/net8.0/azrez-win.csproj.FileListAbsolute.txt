@@ -1,0 +1,15 @@
+/Users/marianleica/Build/projects/azrez-win/bin/Debug/net8.0/azrez-win
+/Users/marianleica/Build/projects/azrez-win/bin/Debug/net8.0/azrez-win.deps.json
+/Users/marianleica/Build/projects/azrez-win/bin/Debug/net8.0/azrez-win.runtimeconfig.json
+/Users/marianleica/Build/projects/azrez-win/bin/Debug/net8.0/azrez-win.dll
+/Users/marianleica/Build/projects/azrez-win/bin/Debug/net8.0/azrez-win.pdb
+/Users/marianleica/Build/projects/azrez-win/obj/Debug/net8.0/azrez-win.GeneratedMSBuildEditorConfig.editorconfig
+/Users/marianleica/Build/projects/azrez-win/obj/Debug/net8.0/azrez-win.AssemblyInfoInputs.cache
+/Users/marianleica/Build/projects/azrez-win/obj/Debug/net8.0/azrez-win.AssemblyInfo.cs
+/Users/marianleica/Build/projects/azrez-win/obj/Debug/net8.0/azrez-win.csproj.CoreCompileInputs.cache
+/Users/marianleica/Build/projects/azrez-win/obj/Debug/net8.0/azrez-win.sourcelink.json
+/Users/marianleica/Build/projects/azrez-win/obj/Debug/net8.0/azrez-win.dll
+/Users/marianleica/Build/projects/azrez-win/obj/Debug/net8.0/refint/azrez-win.dll
+/Users/marianleica/Build/projects/azrez-win/obj/Debug/net8.0/azrez-win.pdb
+/Users/marianleica/Build/projects/azrez-win/obj/Debug/net8.0/azrez-win.genruntimeconfig.cache
+/Users/marianleica/Build/projects/azrez-win/obj/Debug/net8.0/ref/azrez-win.dll

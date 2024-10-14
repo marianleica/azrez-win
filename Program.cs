@@ -18,7 +18,7 @@ do
     Console.Clear();
     Console.WriteLine("Welcome to the AZREZ app! Here's the main menu:");
     Console.WriteLine();
-    Console.WriteLine(" 1. Perform initial setup, if your Azure account and subscription are not already set in your console");
+    Console.WriteLine(" 1. Perform initial setup (new env)");
     Console.WriteLine(" 2. Create a basic Azure VM");
     Console.WriteLine(" 3. Create a basic AKS cluster");
     Console.WriteLine(" 4. See Azure Containers scenarios");
