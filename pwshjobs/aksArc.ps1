@@ -1,8 +1,9 @@
 # Setting variables
-$namesuffix=$((10000 + RANDOM % 99999))
+# $namesuffix=$((10000 + RANDOM % 99999))
+$suffix=$(Get-Random -Minimum 1000 -Maximum 9999)
 $RG="azrez" # Name of resource group for the AKS cluster
 $location="uksouth" # Name of the location 
-$AKS="aks-kubenetlb-${namesuffix}" # Name of the AKS cluster
+$AKS="aks-kubenetlb-${suffix}" # Name of the AKS cluster
 
 Write-Output "Creating AKS cluster {$AKS} in resource group {$RG}"
 # Create new Resource Group
@@ -34,7 +35,7 @@ Start-Sleep -Seconds 1
 Write-Output ""
 Write-Output "Onboarding cluster {$AKS} to Azure Arc-enabled Kubernetes"
 # Onboarding the cluster to Azure Arc-enabled Kubernetes
-$ARC="arc-aks-${namesuffix}" # Name of the ARC cluster
+$ARC="arc-aks-${suffix}" # Name of the ARC cluster
 az extension install --name connectedk8s
 az connectedk8s connect --resource-Group $RG --name $ARC
 

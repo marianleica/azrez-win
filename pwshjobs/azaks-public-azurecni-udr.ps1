@@ -21,7 +21,7 @@ $FWROUTE_NAME_INTERNET="${PREFIX}-fwinternet$SUFFIX}"
 
 Write-Output "Creating resource group $RG in $LOC:"
 # Creating resource group
-New-AzResourceGroup -Name $RG -Location $LOC
+az group create --name $RG --location $LOC
 
 Start-Sleep -Seconds 1
 Write-Output ""
