@@ -29,17 +29,17 @@ winget install -e --id Microsoft.AzureCLI
 
 Start-Sleep -Seconds 1
 
-Write-Output "Installing Az PowerShell Module"
+# Write-Output "Installing Az PowerShell Module"
 # Install Az PowerShell module
-Install-Module -Name PowerShellGet -Force
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-Install-Module -Name Az -Repository PSGallery -Force -AllowClobber
-Update-Module -Name Az -Force
+# Install-Module -Name PowerShellGet -Force
+# Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+# Install-Module -Name Az -Repository PSGallery -Force -AllowClobber
+# Update-Module -Name Az -Force
 
 # Now login to Azure and set subscription
 Start-Sleep -Seconds 1
 Write-Output "Your browser will open now. Please login to Azure:"
-Connect-AzAccount -DeviceCode
+az login
 Write-Output ""
 
 Start-Sleep -Seconds 1
