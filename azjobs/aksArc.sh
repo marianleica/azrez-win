@@ -36,7 +36,7 @@ echo "Onboarding cluster $AKS to Azure Arc-enabled Kubernetes"
 # Onboarding the cluster to Azure Arc-enabled Kubernetes
 ARC="arc-aks-${namesuffix}" # Name of the ARC cluster
 az extension install --name connectedk8s
-az connectedk8s connect --resource-Group $RG --name $ARC
+az connectedk8s connect --resource-group $RG --name $ARC
 
 sleep 5
 echo ""
