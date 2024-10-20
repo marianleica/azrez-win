@@ -37,7 +37,6 @@ az group create -n $rg -l $location
 sleep 1
 echo ""
 echo "The virtual machine $vmName:"
-# Create Windows 11
 az vm create -g $rg -n $vmName --image $image --admin-user "azrez" --admin-password $password --public-ip-sku Standard --nsg NSG4VM --nsg-rule RDP
 
 sleep 2
