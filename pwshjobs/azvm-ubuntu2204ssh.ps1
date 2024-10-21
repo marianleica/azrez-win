@@ -28,7 +28,7 @@ Write-Output "The Resource Group:"
 az group create -n $RG -l $location
 Start-Sleep -Seconds 1
 Write-Output ""
-Write-Output "The virtual machine {$vmName}:"
+Write-Output "The virtual machine {$VM}:"
 
 # Create Ubuntu VM
 # New-AzVm -ResourceGroupName $RG -Name $vmName -Location $location -Image $image -VirtualNetworkName "myVnet-${suffix}" -SubnetName "vmsubnet" -SecurityGroupName "vmNSG" -PublicIpAddressName $publicIp -OpenPorts 80,22 -GenerateSshKey
