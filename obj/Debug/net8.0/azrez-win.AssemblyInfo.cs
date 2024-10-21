@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("azrez-win")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7b3996d454f31a47e877caf50c4dff5c1c695e0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec35da870c7ef5d0e0821852bf0cbbf45e0e789b")]
 [assembly: System.Reflection.AssemblyProductAttribute("azrez-win")]
 [assembly: System.Reflection.AssemblyTitleAttribute("azrez-win")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

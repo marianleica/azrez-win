@@ -98,7 +98,7 @@ do
                         // Run azvm-windows11.ps1
                         using Process winazvmwindows11 = new();
                         winazvmwindows11.StartInfo.FileName = "powershell";
-                        winazvmwindows11.StartInfo.Arguments = @"-File C:\azrez\pwshjobs\azsvm-windows11.ps1";
+                        winazvmwindows11.StartInfo.Arguments = @"-File C:\azrez\pwshjobs\azvm-windows11.ps1";
                         winazvmwindows11.StartInfo.UseShellExecute = true;
                         // winazvmwindows11.StartInfo.RedirectStandardOutput = true;
                         winazvmwindows11.Start();

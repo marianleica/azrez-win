@@ -6,7 +6,7 @@ $suffix=$(Get-Random -Minimum 1000 -Maximum 9999)
 #suffix=$((10000 + RANDOM % 99999))
 $rg="azrez"
 $location="uksouth"
-$vmName="azvm-win11-${suffix}"
+$VM="azvm-win11-${suffix}"
 $image="MicrosoftWindowsDesktop:windows-11:win11-21h2-avd:22000.1100.221015"
 $publicIp="win11IP-${suffix}"
 
@@ -20,7 +20,7 @@ $randompass = -join ((48..57) + (65..90) + (97..122) | Get-Random -Count 30 | Fo
 $password = ConvertTo-SecureString $randompass -AsPlainText -Force
 $psCred = New-Object System.Management.Automation.PSCredential($UserName, $password)
 
-Write-Output "Creating virtual machine {$vmName} in resource group {$rg} in location {$location}"
+Write-Output "Creating virtual machine {$VM} in resource group {$rg} in location {$location}"
 Start-Sleep -Seconds 1
 Write-Output ""
 Write-Output "The Resource Group:"
@@ -33,7 +33,7 @@ Write-Output "The virtual machine {$vmName}:"
 
 # Create Windows 11
 # New-AzVm -ResourceGroupName $rg -Name $vmName -Location $location -Image $image -VirtualNetworkName "myVnet-${suffix}" -SubnetName "vmsubnet" -SecurityGroupName "vmNSG" -PublicIpAddressName $publicIp -OpenPorts 80,3389
-az vm create -g $rg -n $vmName --image $image --admin-user "azrez" --admin-password $password --public-ip-sku Standard --nsg NSG4VM --nsg-rule RDP
+az vm create -g $rg -n $VM --image $image --admin-user "azrez" --admin-password $password --public-ip-sku Standard --nsg NSG4VM --nsg-rule RDP
 
 Start-Sleep -Seconds 2
 # This is the public IP address
